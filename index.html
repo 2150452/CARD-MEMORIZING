@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+	<meta charset=utf-8>
+	<title>扑克记忆连连看</title>
+	<link rel="stylesheet" href="css/matchgame.css" />
+</head>
+
+<body>
+	<header>
+		<h1>扑克记忆连连看</h1><br>
+		<button id="res1">重新开始</button>	
+		<button id="res2">清除纪录</button>	
+	</header>
+
+<div id="timer">
+		挑战时长: <span id="elapsed-time">00:00</span>	
+</div>
+	<section id="game">		
+		<div id="cards">			
+			<div class="card">
+				<div class="face front"></div>
+				<div class="face back"></div>
+			</div> 						
+		</div> 
+	</section> 
+	
+	<section id="popup" class="hide">
+		<div id="popup-bg">
+		</div>
+		
+		<div id="popup-box">
+			<div class="ribbon hide">				
+				<div class="ribbon-body">
+					<span>新纪录</span>
+				</div>			
+				<div class="triangle"></div>	
+			</div>		
+			<div id="popup-box-content">
+				<h1>已完成！</h1>				
+				<p>你的分数:</p>
+				<p><span class='score'>13</span></p>
+				<p><small>历史最佳: <span class='last-score'>20</span><br>
+				历史最佳时间: <span class='saved-time'>2022/5/16 3:14pm</span></small></p>
+			</div>
+			<div id="restarting">
+			<button id="res3">重新游戏</button><br>
+			<button id="res4">清除纪录</button>
+			</div>
+		</div>
+	</section>
+
+<script src="js/jquery-1.6.min.js"></script>
+<script src="js/html5games.matchgame.js"></script>
+</body>
+</html>
